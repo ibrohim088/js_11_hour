@@ -32,10 +32,10 @@ const myPromise = new Promise((resolve, reject) => {
    ! получение результата проми
    myPromise
       .then(value => {
-         ! resolve bosa ishlidi agar hammasi yaxshi bosa ishlidi
+         ! resolve agar hammasi yaxshi bosa ishlidi
       })
       .catch(error => {
-         ! reject bosa ishlidi
+         ! reject
          ! qachonki qanaqadir hatoli bosa catch ga tushadi
       })
 })
