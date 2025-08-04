@@ -57,7 +57,7 @@ const people = [
 
 // for
 
-let totalAge = 0  
+let totalAge = 0
 let totalPrice = 0
 
 //? ============================================================
@@ -168,3 +168,42 @@ console.log(newPeople);
 ! log----3:{info: 'Malika (28)', budget: 1700}
 */
 
+// ! for in  , для obj----------------------------------------
+
+// key это название свойства в obj 
+// for ( key in obj ) {
+// действия с каждым свойством obj 
+// значения свойства - obj[key]
+// }
+// используя for in можно перебрать все свойста obj 
+/* 
+
+const myObj = {
+   x: 10,
+   y: true,
+   z: 'abc',
+}
+
+for (const key in myObj) {
+   console.log(key, myObj[key])
+}
+
+
+---как forEach для obj 
+---keys для получения всех ключей с obj
+---Object.keys(myObj) это часть даст нам массив ключей
+---Object.values(myObj) это часть даст нам массив values
+
+Object.keys(myObj).forEach(key => {
+   console.log(key , myObj[key]);
+})
+
+Object.values(myObj).forEach(value => {
+   console.log(value);
+})
+
+for (const key in people) {
+   const person = people[key]
+   console.log(`${person.name} , ${person.lastName}`);
+}
+*/
